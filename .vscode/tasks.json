@@ -1,0 +1,20 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "g++ build",
+      "command": "/usr/bin/g++",
+      "args": [
+        "./src/*.cpp",
+        "./src/*/*.cpp",
+        "-luv",
+        "-o",
+        "main.out"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    }
+  ],
+  "version": "2.0.0"
+}
